@@ -14,7 +14,7 @@ public class KeyboardInput : MonoBehaviour
     public PlayerMovement PlayerMovement;
 
     // Drag the PlayerCombat component here in the Inspector
-    //public PlayerCombat player;
+    public PlayerCombat player;
 
     private void Update()
     {
@@ -35,7 +35,7 @@ public class KeyboardInput : MonoBehaviour
         // If the attack key (Space) was pressed this frame, trigger an attack
         if (WasAttackButtonPressed())
         {
-            //player.Attack();
+            player.Attack();
         }
     }
 

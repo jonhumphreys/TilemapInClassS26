@@ -514,6 +514,7 @@ GameObject:
   - component: {fileID: 1700077181}
   - component: {fileID: 1700077180}
   - component: {fileID: 1700077179}
+  - component: {fileID: 1700077182}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -693,7 +694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78d2896c7bf5bb4ba6e8cf65cc797e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GamepadInput
-  PlayerMovement: {fileID: 0}
+  PlayerMovement: {fileID: 1700077181}
+  PlayerCombat: {fileID: 1700077182}
   Deadzone: 0.2
   GamepadIndex: 0
   UseDpad: 1
@@ -710,6 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyboardInput
   PlayerMovement: {fileID: 1700077181}
+  player: {fileID: 1700077182}
 --- !u!114 &1700077181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,6 +727,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   Speed: 5
   RigidBody: {fileID: 1700077176}
+  Animator: {fileID: 1700077174}
+--- !u!114 &1700077182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700077173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a300512c931e64582c688ff74e74a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   Animator: {fileID: 1700077174}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

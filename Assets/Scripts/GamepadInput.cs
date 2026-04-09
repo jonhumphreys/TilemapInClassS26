@@ -14,7 +14,7 @@ public class GamepadInput : MonoBehaviour
     public PlayerMovement PlayerMovement;
 
     // Drag the PlayerCombat component here in the Inspector
-    //public PlayerCombat PlayerCombat;
+    public PlayerCombat PlayerCombat;
 
     // The minimum stick movement required to register as input (prevents stick drift)
     // 0.2 means the stick must move at least 20% from center before it counts
@@ -46,7 +46,7 @@ public class GamepadInput : MonoBehaviour
         // If the attack button (West button - X on Xbox, Square on PlayStation) was pressed, trigger an attack
         if (WasAttackButtonPressed())
         {
-            //PlayerCombat.Attack();
+            PlayerCombat.Attack();
         }
     }
 
