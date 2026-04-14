@@ -8,9 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator Animator;
 
     private object priorityDevice = null;
-
-
-
+    
     public void Move(Vector2 direction, object inputDevice)
     {
         SetPriorityInputDevice(direction, inputDevice);
